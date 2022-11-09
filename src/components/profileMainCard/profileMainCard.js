@@ -58,7 +58,7 @@ const ProfileMainCard = () => (
         </a>
       </div>
       <div className={styles.description}>
-        Salesforce Developer | AI/ML | BigData | ReactJS/NodeJS | AWS
+        Salesforce Developer | AI/ML | BigData | ReactJS/NodeJS | AWS |
       </div>
     </div>
     <div className="contact-links"></div>
