@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./home.module.scss";
-import bg from "../../public/images/bg.jpeg";
+import profile from "../../public/images/profile.png";
 import { FaBeer } from "react-icons/fa";
 import { Chrono } from "react-chrono";
+import ProfileMainCard from "../profileMainCard/profileMainCard";
 
 const Home = () => {
   const items = [
@@ -85,18 +86,16 @@ const Home = () => {
   ];
   return (
     <div className={styles.Home}>
-      <div className="container">
-        <div className={styles.Tagline}>
-          Welcome to my Profile, <br />
-          Pankaj Dwivedi
-        </div>
+      <ProfileMainCard></ProfileMainCard>
+      {/* <div className="container">
+        <div className={styles.Tagline}>Software Enginger</div>
         <div
           className={styles.Profile}
           data-aos="zoom-out-right"
           data-aos-anchor-placement="top-center"
         >
           <img
-            src={bg}
+            src={profile}
             alt="..."
             width="200"
             height="200"
@@ -207,7 +206,7 @@ const Home = () => {
         </div>
         <div data-aos="zoom-out-right" data-aos-anchor-placement="top-center">
           <img
-            src={bg}
+            src={profile}
             alt="..."
             width="200"
             height="200"
@@ -710,7 +709,7 @@ const Home = () => {
             <img src="<url to  a nice image" />
           </div>
         </Chrono>
-      </div>
+      </div> */}
     </div>
   );
 };
